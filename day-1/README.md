@@ -1,5 +1,34 @@
 # Day 1 — Getting Started with OpenAI
 
+## Prerequisites
+
+### 1. Install Python
+
+Download and install Python 3.10 or higher from the official site:
+
+👉 [https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+**Installation tips:**
+- On the Windows installer, check **"Add Python to PATH"** before clicking Install.
+- On macOS, you can also install via [Homebrew](https://brew.sh): `brew install python`
+- Verify the install: `python --version`
+
+---
+
+### 2. Install Visual Studio Code
+
+Download VS Code from:
+
+👉 [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+
+**Recommended extensions for this class:**
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) — IntelliSense, linting, debugging
+- [Python Environments](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-python-envs) — manage virtual environments from VS Code
+
+Install an extension: open VS Code → press `Ctrl+Shift+X` (or `Cmd+Shift+X` on Mac) → search the extension name → click Install.
+
+---
+
 ## How to Get an OpenAI API Key
 
 1. **Create an account** — Go to [platform.openai.com](https://platform.openai.com) and sign up (or log in if you already have one).
