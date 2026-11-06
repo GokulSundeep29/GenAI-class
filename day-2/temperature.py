@@ -11,15 +11,15 @@ client = OpenAI()
 
 prompt = "Suggest one name for a coffee shop. Reply with the name only."
 
-# gpt-4.1-mini supports temperature; some reasoning models (e.g. o3) may not
+# gpt-4.1-mini supports temperature; some reasoning models (e.g. GPT-5) may not
 for temp in [0, 1.2]:
     print(f"\n--- temperature = {temp} ---")
     for _ in range(3):
-        r = client.chat.completions.create(
-            model="gpt-4.1-mini",
-            messages=[{"role": "user", "content": prompt}],
+        r = client.responses.create(
+            model="gpt-5.4-mini",
+            input=prompt,
             temperature=temp,
         )
-        print(r.choices[0].message.content)
+        print(r.output_text)
 
 # Bonus: try temperature=2.0 and see what happens
